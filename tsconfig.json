@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
+    "target": "ES5",
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": true,
@@ -18,7 +18,7 @@
     "jsx": "react-jsx",
     "baseUrl": "./src"
   },
-  "include": [".eslintrc.cjs", "src", "vite.config.ts"],
+  "include": [".eslintrc.cjs", "src", "vite.config.ts", "templates/default/**/*"],
   "references": [{ "path": "./tsconfig.node.json" }],
   "exclude": ["templates", "node_modules"]
 }

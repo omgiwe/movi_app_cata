@@ -3,7 +3,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  ignorePatterns: ['node_modules', 'dist', 'build'],
+  ignorePatterns: ['node_modules', 'dist', 'build', 'default'],
   extends: [
     'airbnb',
     'airbnb-typescript',
@@ -12,16 +12,25 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
   ],
-  overrides: [],
+  overrides: [
+    {
+      files: ['templates/default/**/*'],
+      rules: {
+        'no-unused-vars': 'off',
+        'no-console': 'off',
+      },
+    },
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
-    project: './tsconfig.json',
+    project: ['./tsconfig.json', 'tsconfig.templates.json'],
   },
   plugins: ['react', '@typescript-eslint', 'prettier'],
   rules: {
     'import/no-extraneous-dependencies': ['error', { devDependencies: ['vite.config.ts'] }],
+    'react/function-component-definition': 'off',
     'react/react-in-jsx-scope': 0,
     'prettier/prettier': [
       'error',
