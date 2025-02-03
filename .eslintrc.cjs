@@ -31,6 +31,7 @@ module.exports = {
   rules: {
     'import/no-extraneous-dependencies': ['error', { devDependencies: ['vite.config.ts'] }],
     'react/function-component-definition': 'off',
+    'import/prefer-default-export': 'off',
     'react/react-in-jsx-scope': 0,
     'prettier/prettier': [
       'error',
