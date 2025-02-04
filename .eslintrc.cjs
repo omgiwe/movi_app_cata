@@ -20,6 +20,12 @@ module.exports = {
         'no-console': 'off',
       },
     },
+    {
+      files: ['vite.config.ts'],
+      rules: {
+        'import/no-extraneous-dependencies': 'off',
+      },
+    },
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
