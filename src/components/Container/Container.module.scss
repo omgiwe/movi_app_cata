@@ -1,10 +1,13 @@
 .container {
-  width: 100%;
-  padding: 0 24px;
+  max-width: 1010px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: var(--white);
+  box-shadow: var(--shadow);
 
-  @media (min-width: 767px) {
-    width: 734px;
-    padding: 0;
-    margin: 0 auto;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }

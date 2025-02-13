@@ -14,6 +14,7 @@ html {
   --main-color-hover: #60abff;
 
   --white: #fff;
+  --black: #000;
 
   --gray-50: #f6f8ff;
   --gray-100: #697c9a;
@@ -25,21 +26,23 @@ html {
   --error-color: #f74646;
 
   --shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  --shadow-card: 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
 }
 
 body {
-  font-family: 'Space Mono', monospace;
+  font-family: 'Roboto', serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--gray-50);
-  color: black;
-  font-size: 16px;
-  line-height: 18px;
+  background-color: var(--gray-100);
+  color: var(--black);
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 400;
 }
 
 a {
-  font-family: 'Space Mono', monospace;
+  font-family: 'Roboto', serif;
 }
 
 ul {
@@ -55,5 +58,9 @@ a {
 }
 
 p {
+  margin: 0;
+}
+
+h1 {
   margin: 0;
 }

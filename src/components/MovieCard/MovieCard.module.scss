@@ -1,0 +1,81 @@
+.movieCard {
+  width: 460px;
+  height: 279px;
+  box-shadow: var(--shadow-card);
+  border-radius: 1%;
+  position: relative;
+  &Wrapper {
+    display: flex;
+  }
+
+  &Poster {
+    min-width: 183px;
+    height: 279px;
+  }
+
+  &About {
+    margin-left: 20px;
+    padding-right: 5px;
+    padding-bottom: 7px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  &Genres {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  &Genre {
+    border: 2px solid;
+    border-radius: 5%;
+    border-color: #d9d9d9;
+    color: #000000a6;
+    background-color: antiquewhite;
+    padding: 2px 4px;
+    line-height: 14px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  &Rating {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  &Title {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    margin: 10px 0;
+    margin-right: 50px;
+  }
+
+  &Data {
+    font-size: 12px;
+    line-height: 22px;
+    color: #827e7e;
+    font-weight: 400;
+  }
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
