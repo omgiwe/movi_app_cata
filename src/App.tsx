@@ -128,6 +128,13 @@ function App() {
     }
   }
 
+  function test() {
+    const num = 5
+    return num
+  }
+
+  test()
+
   useEffect(() => {
     const registerGuestSession = async (): Promise<void> => {
       const sessionData = localStorage.getItem('sessionTMDB')
